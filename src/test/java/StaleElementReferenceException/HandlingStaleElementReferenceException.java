@@ -28,6 +28,12 @@ public class HandlingStaleElementReferenceException {
         }
     }
 
+//    Порада: розміщати локатор в метод і використовувати
+//    викликом цього метода
+//    Ex: public WebElement getCart() {
+//        return waitClickableElement("id='cart'");
+
+
     /**
      * Використовую для написання чернового кода;
      */
