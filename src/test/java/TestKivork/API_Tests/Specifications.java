@@ -1,4 +1,4 @@
-package TestKivork;
+package TestKivork.API_Tests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

@@ -1,4 +1,4 @@
-package TestKivork;
+package TestKivork.API_Tests;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class LocationData {
     private double latitude;
     private double longitude;
 
-    public LocationData(){
+    public LocationData() {
         super();
     }
 
@@ -90,12 +90,19 @@ public class LocationData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LocationData that = (LocationData) o;
-        return Double.compare(that.latitude, latitude) == 0 && Double.compare(that.longitude, longitude) == 0 && Objects.equals(ip, that.ip) && Objects.equals(type, that.type) && Objects.equals(continent_code, that.continent_code) && Objects.equals(continent_name, that.continent_name) && Objects.equals(country_code, that.country_code) && Objects.equals(country_name, that.country_name) && Objects.equals(region_code, that.region_code) && Objects.equals(region_name, that.region_name) && Objects.equals(city, that.city) && Objects.equals(zip, that.zip);
+        return Double.compare(that.latitude, latitude) == 0 
+                && Double.compare(that.longitude, longitude) == 0
+                && Objects.equals(ip, that.ip) && Objects.equals(type, that.type)
+                && Objects.equals(continent_code, that.continent_code) && Objects.equals(continent_name, that.continent_name)
+                && Objects.equals(country_code, that.country_code) && Objects.equals(country_name, that.country_name)
+                && Objects.equals(region_code, that.region_code) && Objects.equals(region_name, that.region_name)
+                && Objects.equals(city, that.city) && Objects.equals(zip, that.zip);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ip, type, continent_code, continent_name, country_code, country_name, region_code, region_name, city, zip, latitude, longitude);
+        return Objects.hash(ip, type, continent_code, continent_name, country_code, country_name,
+                region_code, region_name, city, zip, latitude, longitude);
     }
 
     @Override
