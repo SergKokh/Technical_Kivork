@@ -24,7 +24,7 @@ public class GetUserKey extends TestInit {
         String userKay = new DashBoardUserPage(driver).getKay().getText();
         FileWriter writer = null;
         try {
-            writer = new FileWriter("UserKay.txt", true);
+            writer = new FileWriter("UserKay1.txt", true);
             for (int i = 0; i < userKay.length(); i++) {
                 writer.write(userKay.charAt(i));
             }

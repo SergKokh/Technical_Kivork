@@ -19,7 +19,7 @@ public class CheckLocation {
     private final static String FIELD = "=main";
 
     @BeforeMethod
-    public void getUserKay() throws IOException {
+    public void getUserKay() {
         try (FileReader reader = new FileReader("UserKay.txt")) {
             String read = "";
             int readKey;
@@ -33,7 +33,7 @@ public class CheckLocation {
     }
 
     @Test
-    public void checkLatitudeAndLongitude() throws IOException {
+    public void checkLatitudeAndLongitude() {
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpec(200));
         double realLatitude = 50.51;
         double realLongitude = 30.79;
